@@ -1,0 +1,31 @@
+{
+    "type": "Background_Data",
+    "part": [
+        {
+            "crimeName_criminal": "Kidnapping_Buri-Jadugarni",
+            "description": "A ugly witch that like to fly on the broom and kidnap children to use them as slaves even tho they are black or not",
+            "background": {
+                "type": "string",
+                "contacts": {
+                    "Person_A": {
+                        "job": "job_name",
+                        "description": ["description of the person contains in list format to contain multiple values such as age,sex,background,previous crime historyand etc. "]
+                    },
+                    "Person _B": {
+                        "job": "job_name",
+                        "description": ["description of the person contains in list format to contain multiple values such as age,sex,background,previous crime historyand etc. "]
+                    },
+                    "Person_C": {
+                        "job": "job_name",
+                        "description": ["description of the person contains in list format to contain multiple values such as age,sex,background,previous crime historyand etc. "]
+                    },
+                    "Person_D": {
+                        "job": "job_name",
+                        "description": ["description of the person contains in list format to contain multiple values such as age,sex,background,previous crime historyand etc. "]
+                    }
+                },
+                "alive": []
+            }
+        }
+    ]
+}
