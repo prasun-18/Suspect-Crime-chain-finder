@@ -25,7 +25,7 @@ def create_tags_and_edges(session):
     session.execute('CREATE TAG IF NOT EXISTS criminal(name string, description string, embeddings string)')
     session.execute('CREATE TAG IF NOT EXISTS contact(job string, description string)')
 
-    session.execute('CREATE EDGE IF NOT EXISTS happend()')
+    session.execute('CREATE EDGE IF NOT EXISTS happened()')
     session.execute('CREATE EDGE IF NOT EXISTS responsible()')
     session.execute('CREATE EDGE IF NOT EXISTS in_contact_with(alive bool)')
     time.sleep(10)
