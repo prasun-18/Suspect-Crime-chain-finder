@@ -5,6 +5,11 @@
 # Suspect-Crime-chain-finder
 - This `Linux/Ubuntu-based` AI tool uses Nebula Graph DB to find suspect and criminal relationship chains. Raw data in `JSON` format is used and automated insertion is performed using Python for graph db. Here I am using `Mistral-7B-v2` LLM to generates embeddings for graph data, and also user queries are converted into embeddings and processed through cosine similarity to deliver the most likely results efficiently.
 
+
+- **Illustration of the graph based on the dummy data base.**
+![Graph](D:/Prasun/Git Projects/Suspect-Crime-chain-finder/Graph database.png)
+
+
 - Here for our project we are using [`mistralai/Mistral-7B-Instruct-v0.2`](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2/tree/main) model locally, or you can make end point connections.
 
 ---
@@ -172,49 +177,45 @@ Suppose we train a Word2Vec model using this tiny corpus. The model learns the f
 ### Formula
 The formula for cosine similarity between two vectors **A** and **B** is:
 
-\[
-\text{Cosine Similarity} = \frac{\mathbf{A} \cdot \mathbf{B}}{||\mathbf{A}|| \times ||\mathbf{B}||}
-\]
+**`Cosine Similarity = (A · B) / (||A|| * ||B||)`**
+
 
 Where:
-- \(\mathbf{A} \cdot \mathbf{B}\) is the **dot product** of vectors A and B.
-- \(||\mathbf{A}||\) and \(||\mathbf{B}||\) are the **magnitudes** (or lengths) of the vectors.
+- `A · B` is the **dot product** of vectors A and B.
+- `||A||` and `||B||` are the **magnitudes** (or lengths) of the vectors.
 
-### Steps for Calculation
+## Steps for Calculation
 Let's walk through the steps with a simple example.
 
-#### Example:
+### Example:
 Given two vectors:  
 **A = [1, 2, 3]**  
 **B = [4, 5, 6]**
 
-#### Step 1: Compute the Dot Product (A · B)
+### Step 1: Compute the Dot Product (A · B)
 The dot product is calculated as:
 
-\[
-\mathbf{A} \cdot \mathbf{B} = (1 \times 4) + (2 \times 5) + (3 \times 6) = 4 + 10 + 18 = 32
-\]
+**`A · B = (1 * 4) + (2 * 5) + (3 * 6) = 4 + 10 + 18 = 32`**
 
-#### Step 2: Compute the Magnitude of Vector A (||A||)
+
+### Step 2: Compute the Magnitude of Vector A (||A||)
 The magnitude of a vector is calculated as the square root of the sum of the squares of its components:
 
-\[
-||\mathbf{A}|| = \sqrt{(1^2 + 2^2 + 3^2)} = \sqrt{(1 + 4 + 9)} = \sqrt{14} \approx 3.74
-\]
+**`||A|| = sqrt(1^2 + 2^2 + 3^2) = sqrt(1 + 4 + 9) = sqrt(14) ≈ 3.74`**
 
-#### Step 3: Compute the Magnitude of Vector B (||B||)
+
+### Step 3: Compute the Magnitude of Vector B (||B||)
 Similarly, for vector B:
 
-\[
-||\mathbf{B}|| = \sqrt{(4^2 + 5^2 + 6^2)} = \sqrt{(16 + 25 + 36)} = \sqrt{77} \approx 8.77
-\]
+**`||B|| = sqrt(4^2 + 5^2 + 6^2) = sqrt(16 + 25 + 36) = sqrt(77) ≈ 8.77`**
 
-#### Step 4: Compute Cosine Similarity
+
+### Step 4: Compute Cosine Similarity
 Now, substitute the dot product and magnitudes into the cosine similarity formula:
 
-\[
-\text{Cosine Similarity} = \frac{\mathbf{A} \cdot \mathbf{B}}{||\mathbf{A}|| \times ||\mathbf{B}||} = \frac{32}{3.74 \times 8.77} = \frac{32}{32.82} \approx 0.975
-\]
+**`Cosine Similarity = (A · B) / (||A|| * ||B||) = 32 / (3.74 * 8.77) = 32 / 32.82 ≈ 0.975`**
+
+
 
 So, the cosine similarity between vectors **A** and **B** is approximately **0.975**, which indicates a high similarity.
 
@@ -224,4 +225,5 @@ So, the cosine similarity between vectors **A** and **B** is approximately **0.9
 - **Cosine similarity** focuses on the angle between the vectors, ignoring their magnitude, making it useful for text similarity (e.g., document comparison).
 
 
-
+### Thanks for reading till the end!!
+`XD`
