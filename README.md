@@ -1,7 +1,3 @@
-**Note** Still updating the read_me file 
-
----
-
 # Suspect-Crime-chain-finder
 - This `Linux/Ubuntu-based` AI tool uses Nebula Graph DB to find suspect and criminal relationship chains. Raw data in `JSON` format is used and automated insertion is performed using Python for graph db. Here I am using `Mistral-7B-v2` LLM to generates embeddings for graph data, and also user queries are converted into embeddings and processed through cosine similarity to deliver the most likely results efficiently.
 
