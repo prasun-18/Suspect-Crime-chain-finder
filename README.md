@@ -225,5 +225,5 @@ So, the cosine similarity between vectors **A** and **B** is approximately **0.9
 - **Cosine similarity** focuses on the angle between the vectors, ignoring their magnitude, making it useful for text similarity (e.g., document comparison).
 
 
-### Thanks for reading till the end!!
+#### Thanks for reading till the end!!
 `XD`
