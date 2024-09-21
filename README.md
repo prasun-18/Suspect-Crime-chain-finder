@@ -7,7 +7,7 @@
 
 
 - **Illustration of the graph based on the dummy data base.**
-![Graph](D:/Prasun/Git Projects/Suspect-Crime-chain-finder/Graph database.png)
+![Graph](./Graph database.png)
 
 
 - Here for our project we are using [`mistralai/Mistral-7B-Instruct-v0.2`](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2/tree/main) model locally, or you can make end point connections.
